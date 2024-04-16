@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["seleccionarMetodo","e","document","getElementById"],"mappings":"AAAA,SAAAA,kBAAAC,GACAC,SAAAC,eAAA","file":"bundle.js","sourcesContent":["function seleccionarMetodo(e){\r\n    const menuUsuario = document.getElementById('.admin-usuario');\r\n\r\n\r\n}"]}

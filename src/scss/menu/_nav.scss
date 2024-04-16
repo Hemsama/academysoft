@@ -1,0 +1,37 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.profile{
+    width:10%;
+    background-color: v.$azul-oscuro;
+    padding: 1rem 3rem;
+    img{
+        border-radius: 3rem;
+        height: 63.29px;
+        width: 66.29px;
+    }
+}
+.nav-admin{
+    display: flex;
+    .nav-menu ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        background-color: v.$negro;
+        color: v.$blanco;
+        padding: 3.4rem;
+        margin: 0;
+        li{
+            margin-left: 6.53rem;
+            font-weight: bold;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .desplegable-usuario{
+        overflow: hidden;
+    }
+}

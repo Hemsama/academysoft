@@ -1,0 +1,30 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.welcome-admin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0rem 2rem;
+    p{
+        font-weight: bold;
+    }
+}
+
+.welcome-main{
+    background-color: v.$azul-oscuro;   
+    padding-bottom: 45rem;
+}
+
+.welcome-logo{
+    background-color: v.$negro-transparente;
+    width: 60%;
+    height: 62%;
+    margin: auto;
+    padding-top: 10rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 2rem;
+    right: 20rem;   
+}

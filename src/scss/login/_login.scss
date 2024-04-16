@@ -1,0 +1,78 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.img-login{
+    background-image: url('/build/img/fondologin.webp');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.login-logo{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    margin: auto;
+    margin-top: 12rem;
+    margin-bottom: 0;
+    width: 50%;
+    background-color: transparent;
+    left: 40rem;
+    bottom: 47rem;
+}
+
+.login-container{
+    position: absolute;
+    width: 70%;
+    margin: auto;
+    margin-top: 0;
+    text-align: center;
+    padding: 4rem;
+    border-radius: 1rem;
+    background-color: v.$negro-transparente;
+    top: 15rem;
+    left: 22rem;
+    .login-title{ 
+        color: v.$blanco;
+    }
+
+    a{
+        display: block;
+        margin-top: 3rem;
+        color: v.$blanco;
+        text-decoration: underline;
+        font-weight: v.$regular;
+    }
+}
+
+.boton{
+    color: v.$negro;
+    background-color: v.$azul-transparente;
+    margin-top: 3rem;
+    width: 30%;
+    padding: 2rem;
+    border-radius: 2rem;
+    font-weight: v.$bold;
+    
+    &:hover{
+        cursor: pointer;
+    }
+}
+.formulario-login{
+    input{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid v.$blanco;
+        color: v.$blanco;
+        padding: 1rem;
+        font-weight: v.$bold;
+        width: 60%;
+        margin-top: 5rem;
+    }
+
+
+    ::placeholder{
+        color: v.$blanco;
+    }
+}
